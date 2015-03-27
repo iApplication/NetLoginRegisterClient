@@ -14,6 +14,9 @@
 		B2A1FD121AC441020001AFCC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2A1FD111AC441020001AFCC /* Images.xcassets */; };
 		B2A1FD151AC441020001AFCC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2A1FD131AC441020001AFCC /* LaunchScreen.xib */; };
 		B2A1FD211AC441030001AFCC /* NetLoginRegisterClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A1FD201AC441030001AFCC /* NetLoginRegisterClientTests.m */; };
+		B2A1FD2E1AC445440001AFCC /* LJDatabaseUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A1FD2B1AC445440001AFCC /* LJDatabaseUtil.m */; };
+		B2A1FD2F1AC445440001AFCC /* LJUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A1FD2D1AC445440001AFCC /* LJUtil.m */; };
+		B2A1FD311AC445F00001AFCC /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B2A1FD301AC445F00001AFCC /* libsqlite3.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,11 @@
 		B2A1FD1A1AC441030001AFCC /* NetLoginRegisterClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetLoginRegisterClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2A1FD1F1AC441030001AFCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2A1FD201AC441030001AFCC /* NetLoginRegisterClientTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetLoginRegisterClientTests.m; sourceTree = "<group>"; };
+		B2A1FD2A1AC445440001AFCC /* LJDatabaseUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LJDatabaseUtil.h; path = Util/LJDatabaseUtil.h; sourceTree = SOURCE_ROOT; };
+		B2A1FD2B1AC445440001AFCC /* LJDatabaseUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LJDatabaseUtil.m; path = Util/LJDatabaseUtil.m; sourceTree = SOURCE_ROOT; };
+		B2A1FD2C1AC445440001AFCC /* LJUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LJUtil.h; path = Util/LJUtil.h; sourceTree = SOURCE_ROOT; };
+		B2A1FD2D1AC445440001AFCC /* LJUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LJUtil.m; path = Util/LJUtil.m; sourceTree = SOURCE_ROOT; };
+		B2A1FD301AC445F00001AFCC /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2A1FD311AC445F00001AFCC /* libsqlite3.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +72,7 @@
 		B2A1FCF81AC441020001AFCC = {
 			isa = PBXGroup;
 			children = (
+				B2A1FD301AC445F00001AFCC /* libsqlite3.dylib */,
 				B2A1FD031AC441020001AFCC /* NetLoginRegisterClient */,
 				B2A1FD1D1AC441030001AFCC /* NetLoginRegisterClientTests */,
 				B2A1FD021AC441020001AFCC /* Products */,
@@ -81,6 +91,10 @@
 		B2A1FD031AC441020001AFCC /* NetLoginRegisterClient */ = {
 			isa = PBXGroup;
 			children = (
+				B2A1FD2A1AC445440001AFCC /* LJDatabaseUtil.h */,
+				B2A1FD2B1AC445440001AFCC /* LJDatabaseUtil.m */,
+				B2A1FD2C1AC445440001AFCC /* LJUtil.h */,
+				B2A1FD2D1AC445440001AFCC /* LJUtil.m */,
 				B2A1FD081AC441020001AFCC /* AppDelegate.h */,
 				B2A1FD091AC441020001AFCC /* AppDelegate.m */,
 				B2A1FD0B1AC441020001AFCC /* ViewController.h */,
@@ -219,6 +233,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2A1FD2F1AC445440001AFCC /* LJUtil.m in Sources */,
+				B2A1FD2E1AC445440001AFCC /* LJDatabaseUtil.m in Sources */,
 				B2A1FD0D1AC441020001AFCC /* ViewController.m in Sources */,
 				B2A1FD0A1AC441020001AFCC /* AppDelegate.m in Sources */,
 				B2A1FD071AC441020001AFCC /* main.m in Sources */,
